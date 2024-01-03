@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+    ></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div
+      class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-gradient-to-r from-violet-500 to-fuchsia-500 gp-10"
+    >
+      <div
+        class="text-[#000] font-large text-[35px] py-12 mb-12 font-playfair font-serif px-5 py-4 border border-black border-2 shadow-black shadow-md rounded-md bg-slate-300"
+      >
+        Click Counter
+      </div>
+      <div
+        class="text-[#000] font-medium text-[20px] pt-6 ont-playfair font-serif"
+      >
+        Increment And Decrement
+      </div>
+      <div
+        class="class= bg-white flex text-[25px] text-[#0344151] rounded-sm gap-12 p-4 px-7 my-8"
+      >
+        <!-- negative button -->
+        <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+        <div id="counter" class="font-bold">0</div>
+        <!-- positive button  -->
+        <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
